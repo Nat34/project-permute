@@ -23,3 +23,11 @@ Fig. 1, Code Comparison
 | Processing        | Java           |
 | ------------- |:-------------:| -----:|
 | `background (255);`     | `g.setColor(Color.black) fillRect(0, 0, size.width, size.height);`   |
+
+## Resources:
+The resources for this project include the software Processing, the Processing Development Environment, the Processing programming language, the text *Processing: A Programming Handbook for Visual Designers and Artists*, the World Wide Web and the Processing Forum.  Each resource played a key role in producing this project.  The book proved to be an invaluable resource, extending well beyond the sections that were used to write the code specific to the program.  Websites like stackoverflow.com, W3schools.com, Processing.org, Processingjs.org and mathisfun.com played an integral part in helping to troubleshoot throughout the project.  The Processing Forum acted as a resource for community engagement and troubleshooting.
+
+## Structure:
+> In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reorder) its elements, a process called permuting. [Wikipedia](https://pages.github.com/)
+
+I felt this definition is successful at clearly articulating the structural arrangement for this project.  Why I chose a permutation stems from interest in repetition, arrangement and chance.  Integrating the notion of permutation allowed me to explore color arrangements in an ordered and deliberate way while simultaneously incorporating chance in the project.  I choose three colors at random to generate an ordered sequence and by chance produce a visually appealing artwork.
