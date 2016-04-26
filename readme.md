@@ -1,7 +1,7 @@
 # project-permute
 Processing Development Environment
 
-This repository contains files and documentation created during the setup, creation and development of a program using Processing.  This project was developed in conjunction with the course *Creative Engagements with Digital Technology* at the Univeristy of Pittsburgh.
+This repository contains files and documentation created during the setup, creation and development of a program using Processing.  This project was developed in conjunction with the course *Creative Engagements with Digital Technology* at the Univeristy of Pittsburgh and titled: *Permutations, Arrays and Color: Controlling the Repetition in Processing*
 
 ## Project: 
 To generate a tool that will produce a grid of rectangles structured around a permutation of three colors, where order is important and repetition is allowed. 
