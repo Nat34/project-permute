@@ -28,7 +28,7 @@ Fig. 1, Code Comparison
 The resources for this project include the software Processing, the Processing Development Environment, the Processing programming language, the text *Processing: A Programming Handbook for Visual Designers and Artists*, the World Wide Web and the Processing Forum.  Each resource played a key role in producing this project.  The book proved to be an invaluable resource, extending well beyond the sections that were used to write the code specific to the program.  Websites like stackoverflow.com, W3schools.com, Processing.org, Processingjs.org and mathisfun.com played an integral part in helping to troubleshoot throughout the project.  The Processing Forum acted as a resource for community engagement and troubleshooting.
 
 ## Structure:
-> In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reorder) its elements, a process called permuting. [Wikipedia](https://pages.github.com/)
+> In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reorder) its elements, a process called permuting. [Wikipedia](https://en.wikipedia.org/wiki/Permutation)
 
 I felt this definition is successful at clearly articulating the structural arrangement for this project.  Why I chose a permutation stems from interest in repetition, arrangement and chance.  Integrating the notion of permutation allowed me to explore color arrangements in an ordered and deliberate way while simultaneously incorporating chance in the project.  I choose three colors at random to generate an ordered sequence and by chance produce a visually appealing artwork.
 
@@ -240,7 +240,10 @@ for (int x=0; x<9; x++) {
 
 **Interation.5**
 
-The fifth iteration of this project is a java application which integrates the ControlP5 GUI Interface.  Processing can export Java Applications for the Linux, Macintosh, and Windows platforms, enabling the application to run in FullScreen mode and create a folder which contains the source code for the sketch, and all required libraries.  The code is below and the pde file in the project-permute repository.  A video of the application in use can be viewed on [Vimeo](https://vimeo.com/160660732).
+The fifth iteration of this project is a java application which integrates [ControlP5](http://www.sojamo.de/libraries/controlP5/), a GUI(graphical user interface) library for Processing.  The controller used in the application is the ControlP5 Color picker, which includes four horizontal sliders controlling the RGBA channels of of each color.  RGBA stands for Red, Green, Blue and Alpha.  The Alpha channel controls the opacity of the color.  
+> If a pixel has a value of 0% in its alpha channel, it is fully transparent (and, thus, invisible), whereas a value of 100% in the alpha channel gives a fully opaque pixel (traditional digital images). [RGB Color Space Wikipedia](https://en.wikipedia.org/wiki/RGBA_color_space)
+
+Processing can export Java Applications for the Linux, Macintosh, and Windows platforms, enabling the application to run in FullScreen mode and create a folder which contains the source code for the sketch, and all required libraries.  The code is below and the pde file in the project-permute repository.  A video of the application in use can be viewed on [Vimeo](https://vimeo.com/160660732).
 
 ```processing
 import controlP5.*;
