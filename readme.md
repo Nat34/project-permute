@@ -4,7 +4,7 @@ Processing Development Environment
 This repository contains files and documentation created during the setup, creation and development of a program using Processing.  This project was developed in conjunction with the course *Creative Engagements with Digital Technology* at the Univeristy of Pittsburgh and titled: *Permutations, Arrays and Color: Controlling the Repetition in Processing*.
 
 ## Project: 
-To generate a tool that will produce a grid of rectangles structured around a permutation of three colors, where order is important and repetition is allowed. 
+To generate a tool that will produce a grid of rectangles structured around a permutation of three colors, where order is important and repetition is allowed.  There five iterations of code for this project and numerous sketches.  The result of the fifth iteration is a java application.  A video of the application in use can be viewed on [Vimeo](https://vimeo.com/160660732).
 
 ## Drivers: 
 The drivers behind this project are to learn programming basics, to understand the fundamentals of computer graphics, to produce a visually appealing artwork and tool, to save time in experimentation with color arrangements and to engage with the community of artists, students, designers, programmers and educators who use this technology.  
