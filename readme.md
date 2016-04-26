@@ -70,15 +70,17 @@ The `size()` function has two parameters; the first sets the width of the window
 Fig. 4
 
 ```processing
-//Draw the display window 325 pixels wide and 505 pixels high
-//325 = Width
-//There are 9 permutations per column by 25 (the width of each rectangle) and 10 spaces of white space by 10 pixels each)
-//(9x25) + (10+10)  
-//225+100=325
-//(9x45) + (10x10) 
-//There are 9 permutations per column by 45 (the height of each rectangle) and 10 spaces of white space by 10 pixels each)
-//505  = Height
-//405+100 = 505
-size(325, 505);  
+size(325, 505);
+
+/*Draw the display window 325 pixels wide and 505 pixels high
+325 = Width
+There are 9 permutations per column by 25 (the width of each rectangle) and 10 spaces of white space by 10 pixels each)
+(9x25) + (10+10)  
+225+100=325
+(9x45) + (10x10) 
+There are 9 permutations per column by 45 (the height of each rectangle) and 10 spaces of white space by 10 pixels each)
+505  = Height
+405+100 = 505*/
+  
 
 
