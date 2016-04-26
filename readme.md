@@ -124,7 +124,7 @@ rect(10, x[i],25,45);
 int [] x = {10, 65, 120, 175, 230, 
             285, 340, 395, 450 };
 ```
-This is the second iteration of the code, using an array within a program (Fig. 9).  The array is declared with brackets and the type of data it will store is specified.  Within this single statement we declare, create and assign.  Declare the int brackets then create variable x then assign each y-coordinate a data point, 10, 65, 120..The data for each rectangle is accessed in sequence with a `for` loop (Fig. 10).  The `for` function controls a sequence of repetitions. A basic `for` structure has three parts: init, test, and update. Each part must be separated by a semicolon (;). The loop continues until the test evaluates to false.
+This is the second iteration of the code, using an array within a program (Fig. 9).  The array is declared with brackets and the type of data it will store is specified.  Within this single statement we declare, create and assign.  Declare the int brackets then create variable x then assign each y-coordinate a data point, 10, 65, 120..The data for each rectangle is accessed in sequence with a `for` loop (Fig. 10).  The `for` function controls a sequence of repetitions. A basic `for` structure has three parts: init, test, and update. Each part must be separated by a semicolon (;). The loop continues until the test evaluates to false. Fig. 11 demonstrates how the `for` loop controls then reads each array element through the loop.
 
 Fig.9
 ```processing
@@ -153,3 +153,8 @@ for (init; test; update) {
     statements
 }
 ```
+Fig.11
+```processing
+for (int i = 0; i < x.length; i++) {
+```
+`int i =0;` is the initiate, the `i < x.length;` is the test.  The length field stores the number of elements in an array. This field is stored within the array and is accessed with the dot operator.  The `i++;` is the update.  The `++` is an arithmetic operator used to perform an increment of one on the variable i.
