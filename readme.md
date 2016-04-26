@@ -162,11 +162,11 @@ for (int i = 0; i < x.length; i++) {
 ```
 `int i =0;` is the initiate, the `i < x.length;` is the test.  The length field stores the number of elements in an array. This field is stored within the array and is accessed with the dot operator.  The `i++;` is the update.  The `++` is an arithmetic operator used to perform an increment of one on the variable i.
 
-This second iteration is 16 lines of code, which is 146 lines less than the first iteration.  However, the code does not assign the rectangles their fill color based on the permutation. From here I sought assistance from the Processing Forum.  The result was this iteration of the code (Fig. 11).
+This second iteration is 16 lines of code, which is 146 lines less than the first iteration.  However, the code does not assign the rectangles their fill color based on the permutation. From here I sought assistance from the (Processing Forum)[https://forum.processing.org/two/discussion/11662/permutations-arrays-colors#latest] Many thanks to (TfGuy44)[https://forum.processing.org/two/profile/279/TfGuy44].  The result was this iteration of the code (Fig. 12).
 
 **Iteration.3**
 
-Fig. 11
+Fig. 12
 
 ```processing
 size(325, 510);
