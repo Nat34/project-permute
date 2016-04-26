@@ -45,4 +45,6 @@ Fig. 2
 {a,b,c} {b,b,c} {c,b,c} 
 {a,c,a} {b,c,a} {c,c,a} 
 {a,c,b} {b,c,b} {c,c,b} 
-{a,c,c} {b,c,c} {c,c,c}```
+{a,c,c} {b,c,c} {c,c,c}
+
+```
