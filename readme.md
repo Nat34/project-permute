@@ -98,4 +98,4 @@ d - height of rectangle
 ```
 Fig.6
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/Nat34/project-permute/images/fig6.png "Logo Title Text 1")
