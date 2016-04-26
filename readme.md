@@ -162,7 +162,7 @@ for (int i = 0; i < x.length; i++) {
 ```
 `int i =0;` is the initiate, the `i < x.length;` is the test.  The length field stores the number of elements in an array. This field is stored within the array and is accessed with the dot operator.  The `i++;` is the update.  The `++` is an arithmetic operator used to perform an increment of one on the variable i.
 
-This second iteration is 16 lines of code, which is 146 lines less than the first iteration.  However, the code does not assign the rectangles their fill color based on the permutation. From here I sought assistance from the (Processing Forum)[https://forum.processing.org/two/discussion/11662/permutations-arrays-colors#latest] Many thanks to (TfGuy44)[https://forum.processing.org/two/profile/279/TfGuy44].  The result was this iteration of the code (Fig. 12).
+This second iteration is 16 lines of code, which is 146 lines less than the first iteration.  However, the code does not assign the rectangles their fill color based on the permutation. From here I sought assistance from the [Processing Forum](https://forum.processing.org/two/discussion/11662/permutations-arrays-colors#latest). Many thanks to [TfGuy44](https://forum.processing.org/two/profile/279/TfGuy44).  The result was this iteration of the code (Fig. 12).
 
 **Iteration.3**
 
@@ -195,3 +195,12 @@ for (int x=0; x<9; x++) {
   }
 }
 ```
+This third iteration employs the use of an array of objects.  Within this type of array the following occurs:
+ 
+1. Declare the array 
+2. Create the array 
+3. Create each object in the array 
+
+This code creates a `color[]` array to hold three color objects.  The second array in the code is defined by the `int[][]`. Again this array follows the steps of declare, create, assign, and also basing it off the permutation structure. I believe this is a considered a multi-dimensional array, where data can also be stored and retrieved from arrays with more than one dimension.  I am still learning how this section of the code works.
+
+The third part of this code uses Nested `for()` loops, the fill sets the color, where the color variable has been assigned using an array.  A nested `for` loop is a `for` loop within a `for` loop, an inner `for` loop (the y) within the body of an outer one, the x. From what I gather the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes (Fig. 12).
