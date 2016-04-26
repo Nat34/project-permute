@@ -36,7 +36,8 @@ There are permutations where repetition is allowed and permutations without repe
 
 Fig. 2
 
-```{a,a,a} {b,a,a} {c,a,a} 
+```
+{a,a,a} {b,a,a} {c,a,a} 
 {a,a,b} {b,a,b} {c,a,b}
 {a,a,c} {b,a,c} {c,a,c}
 {a,b,a} {b,b,a} {c,b,a} 
