@@ -96,3 +96,6 @@ b - y-coordinate
 c - width of rectangle
 d - height of rectangle
 ```
+Fig.6
+
+![alt text](https://github.com/Nat34/project-permute/images/fig6.jpg "Fig. 6")
