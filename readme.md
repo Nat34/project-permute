@@ -48,3 +48,19 @@ Fig. 2
 {a,c,c} {b,c,c} {c,c,c}
 
 ```
+Fig. 3
+
+```processing
+size(325, 505);
+background(255);
+color c1 = color(255, 255, 102);
+color c2 = color(255, 102, 204);
+color c3 = color(153, 0, 255);
+//permutation 1
+fill(c1);
+rect(10, 10, 25, 45);
+fill(c1);
+rect(45, 10, 25, 45);
+fill(c1);
+rect(80, 10, 25, 45);
+```
