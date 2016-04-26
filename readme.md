@@ -98,4 +98,4 @@ d - height of rectangle
 ```
 Fig.6
 
-![alt text](https://github.com/Nat34/project-permute/images/fig6.jpg "Fig. 6")
+![alt text]( project-permute/images/fig6.png  "Fig. 6")
