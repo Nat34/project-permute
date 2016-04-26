@@ -64,3 +64,21 @@ rect(45, 10, 25, 45);
 fill(c1);
 rect(80, 10, 25, 45);
 ```
+
+The `size()` function has two parameters; the first sets the width of the window and the second sets its height.  Determining the size of the display window was one of the most interesting aspects of this project.  So often the paper and canvas size has informed the size, structure and display of  my 2D work but here the parameters of one `rect()` function permuted determined the size of the window display (Fig. 4).
+
+Fig. 4
+
+```processing
+//Draw the display window 325 pixels wide and 505 pixels high
+//325 = Width
+//There are 9 permutations per column by 25 (the width of each rectangle) and 10 spaces of white space by 10 pixels each)
+//(9x25) + (10+10)  
+//225+100=325
+//(9x45) + (10x10) 
+//There are 9 permutations per column by 45 (the height of each rectangle) and 10 spaces of white space by 10 pixels each)
+//505  = Height
+//405+100 = 505
+size(325, 505);  
+
+
