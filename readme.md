@@ -31,3 +31,17 @@ The resources for this project include the software Processing, the Processing D
 > In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reorder) its elements, a process called permuting. [Wikipedia](https://pages.github.com/)
 
 I felt this definition is successful at clearly articulating the structural arrangement for this project.  Why I chose a permutation stems from interest in repetition, arrangement and chance.  Integrating the notion of permutation allowed me to explore color arrangements in an ordered and deliberate way while simultaneously incorporating chance in the project.  I choose three colors at random to generate an ordered sequence and by chance produce a visually appealing artwork.
+
+There are permutations where repetition is allowed and permutations without repetition.  The results from calculating a permutation where 3 is the number of colors to choose from and 3 is the number of colors chosen, where repetition is allowed and order matters, was the most visually appealing and satisfying to me.  This arrangement (Fig. 2) is the result from calculating this permutation and my decision to arrange the first 9 permutations into columns.  This decision to arrange the permutations in columns was based on my intuition that this arrangement would be successful when using rectangles and color.  This arrangement then informed the parameters of the rect() function and size() function (Fig.3).  Fig. 3 is the first iteration of my code.
+
+Fig. 2
+
+```{a,a,a} {b,a,a} {c,a,a} 
+{a,a,b} {b,a,b} {c,a,b}
+{a,a,c} {b,a,c} {c,a,c}
+{a,b,a} {b,b,a} {c,b,a} 
+{a,b,b} {b,b,b} {c,b,b}
+{a,b,c} {b,b,c} {c,b,c} 
+{a,c,a} {b,c,a} {c,c,a} 
+{a,c,b} {b,c,b} {c,c,b} 
+{a,c,c} {b,c,c} {c,c,c}```
