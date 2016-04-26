@@ -98,4 +98,29 @@ d - height of rectangle
 ```
 Fig.6
 
-![alt text](https://github.com/Nat34/project-permute/blob/master/images/fig6.png "Logo Title Text 1")
+![alt text](https://github.com/Nat34/project-permute/blob/master/images/fig6.png "Fig.6")
+
+Because it takes 6 lines of code to draw each permutation and 27 permutations are desired, the code bloats to 162 lines.  To reduce the lines of code needed to execute each permutation the assistance of `Arrays` was called.  An array is a list of data. The benefits of using arrays is to avoid the cumbersome chore of storing data points in individual variables.  In computer programming, an array is a set of data elements stored under the same name. Arrays can be created to hold any type of data, and each element can be individually assigned and read.  Usually, a `for` loop is used to access array elements, especially with large arrays.
+
+This code demonstrates using separate variables (Fig. 7). The code below (Fig. 8) shows how the data elements can be logically grouped together in an array.  Array elements are numbered starting with zero. The first element is at position `[0]`, the second is at `[1]`, and so on.  In this case, position`[0]` is 10, position `[1]`, 65 and so on.
+
+Fig.7
+
+```processing
+rect(10, 10, 25, 45);
+rect(10, 65, 25, 45);
+rect(10, 120, 25, 45);
+rect(10, 175, 25, 45);
+rect(10, 230, 25, 45);
+rect(10, 285, 25, 45);
+rect(10, 340, 25, 45);
+rect(10, 395, 25, 45);
+rect(10, 450, 25, 45);
+```
+Fig. 8
+```processing
+rect(10, x[i],25,45);
+
+int [] x = {10, 65, 120, 175, 230, 
+            285, 340, 395, 450 };
+```
