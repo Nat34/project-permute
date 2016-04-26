@@ -24,10 +24,9 @@ The technology in use for this project is Processing, a software that integrates
 
 Fig. 1, Code Comparison
 
-* Processing * | * Java *
-
-| Tables        | Are           | Cool  |
+| Processing        | Java           |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| `background (255);`     | `g.setColor(Color.black)
+fillRect(0, 0, size.width, size.height);` |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
