@@ -54,6 +54,7 @@ Fig. 3
 ```processing
 size(325, 505);
 background(255);
+noStroke();
 color c1 = color(255, 255, 102);
 color c2 = color(255, 102, 204);
 color c3 = color(153, 0, 255);
@@ -85,7 +86,7 @@ size(325, 505);
   * 10 units of white space by 10 pixels each
   * 405 + 100 = 505
 
-The `background()` function sets the background color to white (Fig. 3).  The `color c1 = color(255, 255, 102);` runs the `color()` function and `color c1` is defined by the output of the function, which creates colors for storing in variables of the color datatype.  The parameters are interpreted as `RGB` or `HSB` values depending on the current `colorMode()`.  The default mode is `RGB` values from 0 to 255 and, therefore, `color(255, 255, 102)` produces a light yellow hue.  Within each permutation I use the `color()` variable as fill color, which sets the color used to fill each shape.  Fig. 5 highlights the syntax for the rectangle shape.  Fig. 6 gives an overview of the code mapped to the output of the code.
+The `background()` function sets the background color to white (Fig. 3).  The`noStroke();` function disables drawing the default stroke (outline) around the shape.  The `color c1 = color(255, 255, 102);` runs the `color()` function and `color c1` is defined by the output of the function, which creates colors for storing in variables of the color datatype.  The parameters are interpreted as `RGB` or `HSB` values depending on the current `colorMode()`.  The default mode is `RGB` values from 0 to 255 and, therefore, `color(255, 255, 102)` produces a light yellow hue.  Within each permutation I use the `color()` variable as fill color, which sets the color used to fill each shape.  Fig. 5 highlights the syntax for the rectangle shape.  Fig. 6 gives an overview of the code mapped to the output of the code.
 
 Fig.5
 
@@ -204,3 +205,153 @@ This third iteration employs the use of an array of objects.  Within this type o
 This code creates a `color[]` array to hold three color objects.  The second array in the code is defined by the `int[][]`. Again this array follows the steps of declare, create, assign, and also basing it off the permutation structure. I believe this is a considered a multi-dimensional array, where data can also be stored and retrieved from arrays with more than one dimension.  I am still learning how this section of the code works.
 
 The third part of this code uses Nested `for()` loops, the fill sets the color, where the color variable has been assigned using an array.  A nested `for` loop is a `for` loop within a `for` loop, an inner `for` loop (the y) within the body of an outer one, the x. From what I gather the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes (Fig. 12).
+
+**Interation.4**
+
+```processing
+size(226, 406);
+background(255);
+ 
+color[] colors = {
+  color(242, 81, 197), color(46, 255, 121), color(255, 255, 111)
+};
+ 
+int[][] structure = {
+  {0,0,0,1,0,0,2,0,0},
+  {0,0,1,1,0,1,2,0,1},
+  {0,0,2,1,0,2,2,0,2},
+  {0,1,0,1,1,0,2,1,0},
+  {0,1,1,1,1,1,2,1,1},
+  {0,1,2,1,1,2,2,1,2},
+  {0,2,0,1,2,0,2,2,0},
+  {0,2,1,1,2,1,2,2,1},
+  {0,2,2,1,2,2,2,2,2},
+};
+ 
+for (int x=0; x<9; x++) {
+  for (int y=0; y<9; y++) {
+    fill(colors[structure[y][x]]);
+    noStroke();
+    rect(1+25*x, 1+45*y, 25, 45);
+    save("rectangle3.tif"); 
+  }
+}
+```
+
+**Interation.5**
+
+The fifth iteration of this project is a java application which integrates the ControlP5 GUI Interface.  Processing can export Java Applications for the Linux, Macintosh, and Windows platforms, enabling the application to run in FullScreen mode and create a folder which contains the source code for the sketch, and all required libraries.  The code is below and the pde file in the project-permute repository.  A video of the application in use can be viewed on [Vimeo](https://vimeo.com/160660732).
+
+```processing
+import controlP5.*;
+
+ControlP5 cp5;
+
+ColorPicker cp;
+ColorPicker cp2;
+ColorPicker cp3;
+
+void setup() {
+  fullScreen();
+  noStroke();
+  cp5 = new ControlP5(this);
+  cp = cp5.addColorPicker("picker")
+          .setPosition(270, 240)
+          .setColorValue(color(255, 255, 255, 255))
+          ;
+  cp5 = new ControlP5(this);
+  cp2 = cp5.addColorPicker("picker")
+          .setPosition(270, 350)
+          .setColorValue(color(255, 255, 255, 255))
+          ;
+  cp5 = new ControlP5(this);
+  cp3 = cp5.addColorPicker("picker")
+          .setPosition(270, 460)
+          .setColorValue(color(255, 255, 255, 255))
+          ;
+}
+
+void draw() {
+  background(255);
+  fill(0, 80);
+  rect(260, 230, 275, 80);
+  fill(0, 80);
+  rect(260, 340, 275, 80);
+  fill(0, 80);
+  rect(260, 450, 275, 80);
+ 
+color[] colors = {
+  color(cp.getColorValue()), color(cp2.getColorValue()), color(cp3.getColorValue())
+};
+ 
+int[][] structure = {
+  {0,0,0,1,0,0,2,0,0},
+  {0,0,1,1,0,1,2,0,1},
+  {0,0,2,1,0,2,2,0,2},
+  {0,1,0,1,1,0,2,1,0},
+  {0,1,1,1,1,1,2,1,1},
+  {0,1,2,1,1,2,2,1,2},
+  {0,2,0,1,2,0,2,2,0},
+  {0,2,1,1,2,1,2,2,1},
+  {0,2,2,1,2,2,2,2,2},
+};
+ 
+for (int x=0; x<9; x++) {
+  for (int y=0; y<9; y++) {
+    fill(colors[structure[y][x]]);
+    rect(770+35*x, 120+55*y, 25, 45);
+  }
+}
+}
+public void controlEvent(ControlEvent c) {
+  // when a value change from a ColorPicker is received, extract the ARGB values
+  // from the controller's array value
+  if(c.isFrom(cp)) {
+    int r = int(c.getArrayValue(0));
+    int g = int(c.getArrayValue(1));
+    int b = int(c.getArrayValue(2));
+    int a = int(c.getArrayValue(3));
+    color col = color(r,g,b,a);
+    println("event\talpha:"+a+"\tred:"+r+"\tgreen:"+g+"\tblue:"+b+"\tcol"+col);
+  }
+   if(c.isFrom(cp2)) {
+    int r = int(c.getArrayValue(0));
+    int g = int(c.getArrayValue(1));
+    int b = int(c.getArrayValue(2));
+    int a = int(c.getArrayValue(3));
+    color col = color(r,g,b,a);
+    println("event\talpha:"+a+"\tred:"+r+"\tgreen:"+g+"\tblue:"+b+"\tcol"+col);
+  }
+  if(c.isFrom(cp3)) {
+    int r = int(c.getArrayValue(0));
+    int g = int(c.getArrayValue(1));
+    int b = int(c.getArrayValue(2));
+    int a = int(c.getArrayValue(3));
+    color col = color(r,g,b,a);
+    println("event\talpha:"+a+"\tred:"+r+"\tgreen:"+g+"\tblue:"+b+"\tcol"+col);
+  }
+}
+
+// color information from ColorPicker 'picker' are forwarded to the picker(int) function
+void picker(int col) {
+  println("picker\talpha:"+alpha(col)+"\tred:"+red(col)+"\tgreen:"+green(col)+"\tblue:"+blue(col)+"\tcol"+col);
+}
+
+
+void keyPressed() {
+  switch(key) {
+    case('1'):
+    // method A to change color
+    cp.setArrayValue(new float[] {120, 0, 120, 255});
+    cp2.setArrayValue(new float[] {120, 0, 120, 255});
+    cp3.setArrayValue(new float[] {120, 0, 120, 255});
+    break;
+    case('2'):
+    // method B to change color
+    cp.setColorValue(color(255, 0, 0, 255));
+    cp2.setColorValue(color(255, 0, 0, 255));
+    cp3.setColorValue(color(255, 0, 0, 255));
+    break;
+  }
+}
+```
