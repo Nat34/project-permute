@@ -71,17 +71,19 @@ Fig. 4
 
 ```processing
 size(325, 505);
-
-/*Draw the display window 325 pixels wide and 505 pixels high
-325 = Width
-There are 9 permutations per column by 25 (the width of each rectangle) and 10 spaces of white space by 10 pixels each)
-(9x25) + (10+10)  
-225+100=325
-(9x45) + (10x10) 
-There are 9 permutations per column by 45 (the height of each rectangle) and 10 spaces of white space by 10 pixels each)
-505  = Height
-405+100 = 505*/
 ```
+###### Draw the display window 325 pixels wide by 505 pixels high
+1. 325 = Width
+  * There are 9 permutations per column by 25 (the width of each rectangle)
+  * 10 units of white space by 10 pixels each
+  * (9 x 25) + (10 + 10)  
+  * 225 + 100 = 325
+2. 505  = Height
+  * There are 9 permutations per column by 45 (the height of each rectangle)
+  * (9 x 45) + (10 x 10) 
+  * 10 units of white space by 10 pixels each
+  * 405 + 100 = 505
+
 The `background()` function sets the background color to white (Fig. 3).  The `color c1 = color(255, 255, 102);` runs the `color()` function and `color c1` is defined by the output of the function, which creates colors for storing in variables of the color datatype.  The parameters are interpreted as `RGB` or `HSB` values depending on the current `colorMode()`.  The default mode is `RGB` values from 0 to 255 and, therefore, `color(255, 255, 102)` produces a light yellow hue.  Within each permutation I use the `color()` variable as fill color, which sets the color used to fill each shape.  Fig. 5 highlights the syntax for the rectangle shape.  Fig. 6 gives an overview of the code mapped to the output of the code.
 
 Fig.5
@@ -92,5 +94,5 @@ parameters
 a - x-coordinate
 b - y-coordinate
 c - width of rectangle
-d- height of rectangle
+d - height of rectangle
 ```
